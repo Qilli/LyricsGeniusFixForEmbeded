@@ -151,6 +151,7 @@ class Genius(API, PublicAPI):
                 header.replace_with("")
 
         lyrics = "\n".join([div.get_text() for div in divs])
+        print("doing some lyrics")
 
         # Remove [Verse], [Bridge], etc.
         if self.remove_section_headers or remove_section_headers:
